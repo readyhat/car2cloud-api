@@ -16,7 +16,7 @@ app.get(`/hello`, (req, res) => {
 app.get(`/hello/:user`, (req, res) => {
   let user = req.params.user;
   console.log(`Greeting ${user}!`);
-  res.send(`Hello, ${user}!`).status(200);
+  res.send(`Goodbye, ${user}!`).status(200);
 });
 
 app.listen(PORT, () => {
